@@ -1,0 +1,40 @@
+/* TODO: Label selector type */
+/* Universal selector is applying the font family to all the elements on the page */
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+/* TODO: Label selector type */
+/* Making the background color for the body lemonchiffon */
+body {
+  background-color: lemonchiffon;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: #f0ead6;
+  background-color: #191970;
+}
+.medium-box{
+  width: 100px;
+  height: 300px;
+}
+figure {
+  width: 200px;
+  background-color: #f0ead6;
+}
+
+/* TODO: Label selector type */
+/* Making any element with this class have a text that is bolder */
+.highlighted-text {
+  font-weight: bolder;
+}
+
+/* TODO: Label selector type */
+/* Makes the element with this id have a background color of whatever this is */
+#contact-section {
+  background-color: #f0ead6;
+}
