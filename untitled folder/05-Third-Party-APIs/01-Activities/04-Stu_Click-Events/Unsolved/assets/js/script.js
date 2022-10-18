@@ -6,6 +6,7 @@ function getPasswordCharacter() {
   return String.fromCharCode(Math.floor(Math.random() * 77) + 34);
 }
 
+
 // Returns a string of concatenated characters of length num
 function passwordGenerator(num) {
   var password = '';
@@ -15,7 +16,8 @@ function passwordGenerator(num) {
   return password;
 }
 
-passwordBtnEl.on('dblclick', function () {
+
+passwordBtnEl.on('lclick', function () {
   var newPassword = passwordGenerator(15);
   passwordDisplayEl.text(newPassword);
 });

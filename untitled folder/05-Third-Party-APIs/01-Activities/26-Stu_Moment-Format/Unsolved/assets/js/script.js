@@ -1,18 +1,18 @@
 // Use Moment.js to format the date and assign to the declared variable.
 // TODO: 1. What is your graduation date in the following format: Jan 1st, 1999?
-var gradDate;
+var gradDate = moment("05/20/2014").format("MMMM Do YYYY");
 $("#1a").text(gradDate);
 
 // TODO: 2. What day of the week will 1/1/2022 be?
-var weekDay;
+var weekDay = moment("1/1/2022", "M-D-YYYY").format("ddd MMM Do, YYYY");
 $("#2a").text(weekDay);
 
 // TODO: 3. Out of 365, what day of the year is today?
-var now;
-$("#3a").text(now);
+var dayYear = moment().format("DDD");
+$("#3a").text(dayYear);
 
 // TODO: 4. What is the current time in the format: hours:minutes:seconds
-var time;
+var time = moment().format("");
 $("#4a").text(time);
 
 // TODO: 5. What is the current Unix timestamp?
