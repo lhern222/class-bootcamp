@@ -19,6 +19,7 @@ function getApi() {
         issueContainer.append(userName);
         issueContainer.append(url);
       // TODO: Loop through the data and generate your HTML
-    });
+  });
 }
+
 fetchButton.addEventListener('click', getApi);
