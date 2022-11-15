@@ -2,9 +2,12 @@
 const songs = ['Creep', 'Everlong', 'Bulls On Parade', 'Song 2', 'What I Got'];
 
 // TODO: Which operator is being used here?
+//spits out a string that is listed above
+//uses spread operator to copy the songs array into another array
 const newSongs = [...songs];
 
 // TODO: What do you expect to be logged in the console?
+//top array
 console.log(newSongs);
 
 // Exercise 2

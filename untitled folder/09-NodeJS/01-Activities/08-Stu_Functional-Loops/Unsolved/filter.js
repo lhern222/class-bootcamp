@@ -24,9 +24,14 @@ const isPrime = num => {
 
 
 // TODO: Describe how filter is working in this example. What will the value of primeArray be? 
+//proginal array is 1,3,2,5,10
+//filtering using is prime would return
+//true,true,false,true,false
 const primeArray = originalArray.filter(isPrime);
 
 
 // TODO: Describe how filter is working in this example. What will the value of moreThan5Array be? 
+//filtering using num>5
+//2 & 10
 const moreThan5Array = originalArray.filter(num => num > 5);
 

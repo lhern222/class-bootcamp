@@ -18,8 +18,10 @@ inquirer
       name: 'confirm',
     },
   ])
-  .then((response) =>
+  .then((response) =>{
+  console.log(response)//if you want the output response to display
     response.confirm === response.password
       ? console.log('Success!')
       : console.log('You forgot your password already?!')
+  }
   );

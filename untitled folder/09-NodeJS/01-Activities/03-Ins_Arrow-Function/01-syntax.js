@@ -19,3 +19,9 @@ var greeting = createGreeting("Hello", "Angie");
 
 // Logs "Hello, Angie!";
 greet(greeting);
+
+
+const add=(numberOne, numberTwo) => numberOne + numberTwo;
+
+
+//const are used instead of function
