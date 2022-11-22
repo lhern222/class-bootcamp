@@ -4,7 +4,7 @@ function Logger() {
     Logger.prototype.init = true;
 
     const colors = {
-      black: "\x1b[30m",
+      black: "\x1b[30m", ////colors, will produce colors
       red: "\x1b[31m",
       green: "\x1b[32m",
       yellow: "\x1b[33m",

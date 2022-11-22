@@ -13,7 +13,6 @@ Work with a partner to resolve the following issues:
 ## Actual Behavior
 
 * When we run `npm run test` in the console, we receive the following error: `"Cannot spyOn on a primitive value; undefined given"`.
-
 * When we run `npm run test` in the console, the tests for `dayCare.test.js` are not passing.
 
 ## Steps to Reproduce the Problem

@@ -4,6 +4,8 @@ const PORT = 3001;
 
 const app = express();
 
+// two routes with the same paths(app.route)
+
 // GET request
 app.get('/api/reviews', (req, res) => {
   // Let the client know that their request was received
@@ -22,6 +24,7 @@ app.post('/api/reviews', (req, res) => {
   res.json(`${req.method} request received`);
 
   // Show the user agent information in the terminal
+  //whats making the request 
   console.info(req.rawHeaders);
 
   // Log our request to the terminal

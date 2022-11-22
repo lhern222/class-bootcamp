@@ -11,6 +11,12 @@ const colors = {
   white: "\x1b[37m"
 };
 
+
+//mock function allow you to test the link between code by erasing the actual implemetation 
+
+//mocking is primarily used in unit testing. An object under test may have dependencis on other (complex) objects. 
+//To isolate the behavior of the object you want to test you replace the other objects by mocks that simulate the behavior of the real objects, 
+// this is useful if the real objects are impractical to incorprate into the unit test 
 describe("Logger", () => {
   describe("colors", () => {
     it("should print in black", () => {
@@ -32,7 +38,7 @@ describe("Logger", () => {
       const mock = jest.spyOn(console, "log");
       mock.mockImplementation(() => {});
 
-      log.red(message);
+      log.red(message); // this triggers the mock by selecting the color that it wants to trigger 
 
       expect(mock).toBeCalledWith(colors.red, message);
 

@@ -11,12 +11,15 @@ const sortHelper = (type) =>
   termData.sort(sortData('term', 'relevance', `${type}`));
 
 // TODO: Add a comment describing the functionality of this route
+//this route gets information from the json file
+// Get route to get all of the terms or all the terms sorted 
+app.get('/api/terms', (req, res) => {
+// console.log(req.params, 'first);
 
-app.get('/api/terms/', (req, res) => {
   // TODO: Add a comment describing the req.query object
-
+  //Check and see if there is a query parameter at all 
   const hasQuery = Object.keys(req.query).length > 0;
-
+// if we have a query of 'sort' and its value is 
   if (hasQuery && req.query.sort === 'dsc') {
     return res.json(sortHelper('dsc'));
   }

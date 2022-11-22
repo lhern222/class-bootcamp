@@ -28,3 +28,18 @@ const massHysteria = (dogs, cats) => {
 };
 
 massHysteria(dogs, cats);
+
+
+
+
+//express.js 
+//HTTP method will be used 
+
+//post - make changes to the data
+//get - get data
+//delete - delete data
+//put- replace data 
+
+//rest (repressentational state transfer, is an architecture for creating a knew service like an API)
+//comprise clients, servers, resources and requests 
+//use stateless communiccation 

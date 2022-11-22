@@ -4,7 +4,7 @@ class Rectangle extends Shape {
   constructor(sideA, sideB) {
     const area = sideA * sideB;
     const perimeter = sideA * 2 + sideB * 2;
-
+//super key word refrences the constructor from the parent class 
     super(area, perimeter);
     this.sideA = sideA;
     this.sideB = sideB;

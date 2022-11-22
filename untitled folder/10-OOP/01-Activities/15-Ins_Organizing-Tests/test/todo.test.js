@@ -4,10 +4,10 @@ describe('Todo', () => {
   describe('Initialization', () => {
     // Positive test
     it("should create an object with a 'text' property set to the 'text' argument provided when called with the 'new' keyword", () => {
-      // Arrange
+      // Arrange (setup)
       const text = 'Pick up milk';
 
-      // Act
+      // Act (action needed to run the test)
       const obj = new Todo(text);
 
       // Assert
@@ -27,3 +27,5 @@ describe('Todo', () => {
     });
   });
 });
+
+//for each file we should have a different test 

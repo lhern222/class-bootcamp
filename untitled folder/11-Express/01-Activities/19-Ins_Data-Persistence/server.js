@@ -50,8 +50,8 @@ app.post('/api/reviews', (req, res) => {
 
     // Write the string to a file
     fs.writeFile(`./db/${newReview.product}.json`, reviewString, (err) =>
-      err
-        ? console.error(err)
+      if (err)
+         console.error(err) 
         : console.log(
             `Review for ${newReview.product} has been written to JSON file`
           )
