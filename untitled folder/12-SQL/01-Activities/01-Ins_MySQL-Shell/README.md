@@ -11,7 +11,7 @@ MySQL Shell is an advanced client and code editor for MySQL located right in our
   * Next, we open the MySQL Shell that connects the terminal to the MySQL instance. In the terminal, at the root directory of the project, enter the following command:
 
     ```sh
-    mysql -u root -p
+    
     ```
 
   * This command tells the MySQL Shell that we want to log in with the root user (-u). The -p stands for "password.". Once we enter this command, we are prompted to enter the password we created when we installed `MySQL`.
